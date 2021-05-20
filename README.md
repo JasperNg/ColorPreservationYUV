@@ -7,6 +7,6 @@ Requirements: \
 -Sckit Image
 
 Without color preservation: \
-![alt text](./06/06(old).jpg) \
+![alt text](./06/06(old).png) \
 With color preservation: \
 ![alt text](./06/06.jpg) \
