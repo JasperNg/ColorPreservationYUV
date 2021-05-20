@@ -7,6 +7,6 @@ Requirements: \
 -Sckit Image
 
 Without color preservation: \
-![alt text](https://github.com/JasperNg/ColorPreservationYUV/blob/[branch]/image1.jpg?raw=true) \
+![alt text](./06/06(old).jpg) \
 With color preservation: \
-![alt text]() \
+![alt text](./06/06.jpg) \
