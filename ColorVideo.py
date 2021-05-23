@@ -14,11 +14,11 @@ imgdir = os.listdir('') #content frames dir
 
 for img in os.listdir(""): #content frames dir
     carr.append(img)
-    print(carr)
 
 for img in os.listdir(""): #style frames dir
     sarr.append(img)
-    print(sarr)
+
+print("Data Loaded")
 
 while count <= len(imgdir):
     img = skimage.io.imread("" + str(carr[index])) #content frames dir
