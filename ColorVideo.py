@@ -21,15 +21,15 @@ for img in os.listdir(""): #style frames dir
 print("Data Loaded")
 
 while count <= len(imgdir):
-    img = skimage.io.imread("" + str(carr[index])) #content frames dir
-    img2 = skimage.io.imread("" + str(sarr[index])) #style frames dir
+    img = skimage.io.imread("D:/Desktop/LudensVid/reframes/" + str(carr[index]))
+    img2 = skimage.io.imread("D:/Desktop/LudensVid/keyframes/" + str(sarr[index]))
     yuv = cv2.cvtColor(np.float32(img), cv2.COLOR_RGB2YUV)
     y, u, v = cv2.split(yuv)
     yuv2 = cv2.cvtColor(np.float32(img2), cv2.COLOR_RGB2YUV)
     h, j, k = cv2.split(yuv2)
     img3 = np.dstack((h, u, v))
     img3 = cv2.cvtColor(np.float32(img3), cv2.COLOR_YUV2BGR)
-    cv2.imwrite(os.path.join(epath, str(count) + ".png"), img3);
+    cv2.imwrite(os.path.join(epath, str(carr[index])), img3);
     del y
     del u
     del v
